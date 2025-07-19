@@ -2,153 +2,39 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import login from '../components/page/Login.vue';
 import home from '../components/common/Home.vue';
-import baojia from '../components/items/baojia.vue';
-import zhipai from '../components/items/zhipai.vue';
-import liebiao from '../components/items/liebiao.vue';
-import anpai from '../components/items/anpai.vue';
-import guanli from '../components/items/guanli.vue';
-import shezhi from '../components/items/shezhi.vue';
-import faxing from '../components/items/faxing.vue';
-import cpgl from '../components/items/cpgl.vue';
-import dbgl from '../components/items/dbgl.vue';
-import xmgl from '../components/items/xmgl.vue';
-import tggl from '../components/items/tggl.vue';
-import xtsz from '../components/items/xtsz.vue';
-import dzb from '../components/items/dzb.vue';
-import jdgl from '../components/items/jdgl.vue';
-import bjgl from '../components/items/bjgl.vue';
-import tjb from '../components/items/tjb.vue';
-import xhjd from '../components/items/xhjd.vue';
-import gys from '../components/items/gys.vue';
-import form from '../components/items/form.vue';
-
+import homepage from '../components/items/homepage.vue';
+import product from '../components/items/product.vue';
+import measure from '../components/items/measure.vue';
+import bugaddress from '../components/items/bugaddress.vue';
+import contact from '../components/items/contact.vue';
 
 Vue.use(Router);
-
 export default new Router({
     routes: [
         {
             path: '/',
-            redirect: '/home' // 默认重定向到第一个菜单项
+            redirect: '/homepage' // 默认重定向到第一个菜单项
         },
         {
-            path: '/home',
-            component: home // 独立页面组件
+            path: '/homepage',
+            component: homepage // 独立页面组件
         },
         {
-            path: '/baojia',
-            component: baojia // 独立页面组件
+            path: '/product',
+            component: product // 独立页面组件
         },
         {
-            path: '/faxing',
-            component: faxing // 独立页面组件
+            path: '/measure',
+            component: measure // 独立页面组件
         },
         {
-            path: '/test1',
-            component: faxing // 独立页面组件
+            path: '/bugaddress',
+            component: bugaddress // 独立页面组件
         },
         {
-            path: '/test2',
-            component: faxing // 独立页面组件
+            path: '/contact',
+            component: contact // 独立页面组件
         },
-        {
-            path: '/test3',
-            component: faxing // 独立页面组件
-        },
-        {
-            path: '/login',
-            component: faxing
-        }
-        // {
-        //     path: '/',
-        //     redirect: '/login'
-        // },
-        // {
-        //     path: '/home',
-        //     component: home,
-        //     children:[
-        //         {
-        //             path: '/',
-        //             component: baojia
-        //         },
-        //         {
-        //             path: '/baojia',
-        //             component: baojia
-        //         },
-        //         {
-        //             path: '/zhipai',
-        //             component: zhipai
-        //         },
-        //         {
-        //             path: '/guanli',
-        //             component: guanli
-        //         },
-        //         {
-        //             path: '/shezhi',
-        //             component: shezhi
-        //         },
-        //         {
-        //             path: '/faxing',
-        //             component: faxing
-        //         },
-        //         {
-        //             path: '/cpgl',
-        //             component: cpgl
-        //         },
-        //         {
-        //             path: '/dbgl',
-        //             component: dbgl
-        //         },
-        //         {
-        //             path: '/xmgl',
-        //             component: xmgl
-        //         },
-        //         {
-        //             path: '/tggl',
-        //             component: tggl
-        //         },
-        //         {
-        //             path: '/xtsz',
-        //             component: xtsz
-        //         },
-        //         {
-        //             path: '/dzb',
-        //             component: dzb
-        //         },
-        //         {
-        //             path: '/jdgl',
-        //             component: jdgl
-        //         },
-        //         {
-        //             path: '/bjgl',
-        //             component: bjgl
-        //         },
-        //         {
-        //             path: '/tjb',
-        //             component: tjb
-        //         },
-        //         {
-        //             path: '/xhjd',
-        //             component: xhjd
-        //         },
-        //         {
-        //             path: '/gys',
-        //             component: gys
-        //         },
-        //         {
-        //             path: '/anpai',
-        //             component: anpai
-        //         },
-        //         {
-        //             path: '/liebiao',
-        //             component: liebiao
-        //         }
-        //     ]
-        // },
-        // {
-        //     path: '/login',
-        //     component: login
-        // },
     ]
 })
 

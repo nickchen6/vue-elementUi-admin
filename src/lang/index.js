@@ -3,11 +3,11 @@ var locales = {
         welcome: '欢迎您：北京乐乐酷科技发展有限公司（广州自我游旗下子公司）',
         title: '安途建材贸易有限公司',
         nav: {
-            '/baojia': '租车管理',
-            '/faxing': '产品管理',
-            '/test1': '测试管理1',
-            '/test2': '测试管理2',
-            '/test3': '测试管理3'
+            '/homepage': '主页',
+            '/product': '产品',
+            '/measure': '测量和安装',
+            '/bugaddress': '购买链接',
+            '/contact': '联系方式'
         },
         asideNav: {
             '租车管理': {
@@ -50,11 +50,11 @@ var locales = {
         welcome: 'welcome:Beijing lele cool technology development co., LTD(Guangzhou self subsidiary)',
         title: 'Antu Building Materials Trading Company',
         nav: {
-            '/baojia': 'Car Rent Manage',
-            '/faxing': 'Product Manage',
-            '/test1': 'Test 1',
-            '/test2': 'Test 2',
-            '/test3': 'Test 3'
+            '/homepage': 'Home',
+            '/product': 'Product',
+            '/measure': 'Measure & Install',
+            '/bugaddress': 'Buy',
+            '/contact': 'Contact'
         },
         asideNav: {
             'Car Rent Manage': {
