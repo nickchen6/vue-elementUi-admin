@@ -1,31 +1,25 @@
 var locales = {
     zh: {
         welcome: '欢迎您：北京乐乐酷科技发展有限公司（广州自我游旗下子公司）',
-        title: '后台管理系统',
-        nav: ['租车管理', '产品管理'],
+        title: '安途建材贸易有限公司',
+        nav: {
+            '/baojia': '租车管理',
+            '/faxing': '产品管理',
+            '/test1': '测试管理1',
+            '/test2': '测试管理2',
+            '/test3': '测试管理3'
+        },
         asideNav: {
             '租车管理': {
                 "baojia": "租车订单报价",
                 "zhipai": "租车订单指派",
-                "liebiao": "租车订单列表",
-                "anpai": "车辆司机安排",
-                "guanli": "租车产品管理",
-                "shezhi": "租车系统设置"
             },
             '产品管理': {
                 "faxing": "产品发行",
                 "cpgl": "产品管理",
                 "dbgl": "产品打包管理",
-                "xmgl": "增值项目管理",
-                "tggl": "动态通告管理",
-                "xtsz": "租车系统设置",
-                "dzb": "长隆产品对照表",
-                "jdgl": "速8供应商酒店管理",
-                "bjgl": "酒店报价管理",
-                "tjb": "库存统计表",
-                "xhjd": "星海酒店绑定",
-                "gys": "供应商产品接入"
-            }
+            },
+            'ceshi':{}
         },
         car: [
             "租车订单报价",
@@ -54,34 +48,25 @@ var locales = {
     },
     en: {
         welcome: 'welcome:Beijing lele cool technology development co., LTD(Guangzhou self subsidiary)',
-        title: 'backstage management system',
-        nav: [
-            'Car Rent Manage',
-            'Product Manage',
-        ],
+        title: 'Antu Building Materials Trading Company',
+        nav: {
+            '/baojia': 'Car Rent Manage',
+            '/faxing': 'Product Manage',
+            '/test1': 'Test 1',
+            '/test2': 'Test 2',
+            '/test3': 'Test 3'
+        },
         asideNav: {
             'Car Rent Manage': {
                 "baojia": "Car rent price",
                 "zhipai": "Car rent arrange",
-                "liebiao": "Car rent list",
-                "anpai": "driver arrange",
-                "guanli": "Car rental manage",
-                "shezhi": "Car system settings"
             },
             'Product Manage': {
                 "faxing": "Product Release",
                 "cpgl": "Product Manage",
                 "dbgl": "Product package manage",
-                "xmgl": "Project Manage",
-                "tggl": "announce Manage",
-                "xtsz": "Car rent setting",
-                "dzb": "Changlong List",
-                "jdgl": "su8 hotel",
-                "bjgl": "hotel manage",
-                "tjb": "nventory statistics",
-                "xhjd": "xinghai hotel",
-                "gys": "supplier Product"
-            }
+            },
+            'TEST':{}
         },
         car: [
             "Car rent price",

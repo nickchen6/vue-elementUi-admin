@@ -1,27 +1,34 @@
 <template>
-    <div class="header">
-        <div class="headerInfo">
-            <!-- 欢迎您：北京乐乐酷科技发展有限公司（广州自我游旗下子公司） -->
-            {{lang.welcome}}
-        </div>
-       <div class="clearfix status">
-            <div class="logoimg"></div>
-        <div class="logo">{{lang.title}}</div>
-        <div class="user-info">
-            <el-dropdown trigger="click" @command="handleCommand">
-                <span class="el-dropdown-link">
-                    <!-- <img class="user-logo" src="../../../static/img/img.jpg">
-                    {{username}} -->
-                </span>
-                <el-dropdown-menu slot="dropdown">
-                    <el-dropdown-item command="loginout">退出</el-dropdown-item>
-                </el-dropdown-menu>
-            </el-dropdown>
-        </div>
-        <div class="switch">
-            <a @click="switchzh">中文</a>/
-            <a @click="switchen">English</a>
-        </div>
+    <div class="header" >
+       <div class=" status"  >
+           <el-row>
+               <el-col :span="5">
+                   <div class="logoimg"></div>
+                   <div class="logo">{{lang.title}}</div>
+               </el-col>
+               <el-col :span="15" style="display: flex; justify-content: center; align-items: center">
+                   <el-menu :default-active="onRoutes"
+                            mode="horizontal"
+                            style="background: transparent;margin-left: -140px;"
+                            @select="handleSelect"
+                            router
+                   >
+                       <el-menu-item v-for="(value, key) in lang.nav"
+                                     :key="key"
+                                     :index="key" style="font-size: 20px;text-align: center;margin-top: 7px">
+                           <!--               <template slot="title"><i class="el-icon-date"></i>{{key}}</template>-->
+                           <!--               <el-menu-item v-for="(detail,item) in value" :index="item">{{detail}}</el-menu-item>-->
+                           {{value}}
+                       </el-menu-item>
+                   </el-menu>
+               </el-col>
+               <el-col :span="4">
+                   <div class="switch">
+                       <a @click="switchzh">中文</a>/
+                       <a @click="switchen">English</a>
+                   </div>
+               </el-col>
+           </el-row>
        </div>
     </div>
 </template>
@@ -34,10 +41,18 @@
         },
         data() {
             return {
-                name: 'linxin'
+                name: 'linxin',
+                index:3,
             }
         },
         computed:{
+            onRoutes(){
+                console.log(this.$route.path);
+                // var a = this.$route.path.replace('/','');
+                // console.log(a);
+                // return a
+                return this.$route.path;
+            },
              lang(){
                 return langpack[this.language]
             },
@@ -61,19 +76,22 @@
                     localStorage.removeItem('ms_username')
                     this.$router.push('/login');
                 }
+
+            },
+            handleSelect(key, keyPath) {
+                console.log(key,keyPath)
             }
         }
     }
 </script>
 <style scoped>
     .header {
-        position: relative;
         box-sizing: border-box;
         width: 100%;
-        height: 100px;
         font-size: 22px;
         line-height: 70px;
         color: #fff;
+        background: #ff9d02;
     }
     .switch {
         float: right;
@@ -91,50 +109,18 @@
     .status {
         padding-left: 30px;
     }
-    .headerInfo {
-        width: 100%;
-        height: 30px;
-        background-color: #475669;
-        line-height: 30px;
-        font-size: 15px;
-        color: #99A9BF;
-    }
+
     .header .logoimg{
         float: left;
         width: 70px;
         height: 70px;
-        background-image: url(../../../static/img/logo.jpg);
+        background-image: url(../../../static/img/antuLogo1.jpg);
         background-size: cover;
         border-radius: 34px;
     }
     .header .logo{
         padding-left: 30px;
         float: left;
-        text-align: center;
-    }
-    .user-info {
-        float: right;
-        padding-right: 50px;
-        font-size: 16px;
-        color: #fff;
-    }
-    .user-info .el-dropdown-link{
-        position: relative;
-        display: inline-block;
-        padding-left: 50px;
-        color: #fff;
-        cursor: pointer;
-        vertical-align: middle;
-    }
-    .user-info .user-logo{
-        position: absolute;
-        left:0;
-        top:15px;
-        width:40px;
-        height:40px;
-        border-radius: 50%;
-    }
-    .el-dropdown-menu__item{
         text-align: center;
     }
 </style>

@@ -23,7 +23,7 @@
             </el-table-column>
             <el-table-column prop="travel" label="行程" width="150">
             </el-table-column>
-            
+
             <el-table-column label="操作" width="180">
                 <template scope="scope">
                     <el-button size="small"
@@ -48,6 +48,7 @@
         components:{search},
         created(){
             var a = window.location.hash.replace('#/','');
+            console.log(a)
             this.currentPosition = this.items[a];
         },
         data() {
@@ -61,7 +62,7 @@
                     carType: '紧凑车',
                     carCount: 3,
                     travel: '北京往返承德',
-                }, 
+                },
                 {
                     time: '2017-02-02',
                     id: 2,
@@ -70,7 +71,7 @@
                     carType: 'SUV',
                     carCount: 5,
                     travel: '西宁往返青海湖',
-                }, 
+                },
                 {
                     time: '2017-02-02',
                     id: 3,
@@ -79,7 +80,7 @@
                     carType: '两厢车',
                     carCount: 7,
                     travel: '南京往返婺源',
-                }, 
+                },
                 {
                     time: '2017-02-02',
                     id: 4,
@@ -128,5 +129,5 @@
     }
 </script>
 <style scoped>
-   
+
 </style>

@@ -29,97 +29,128 @@ export default new Router({
     routes: [
         {
             path: '/',
-            redirect: '/login'
+            redirect: '/home' // 默认重定向到第一个菜单项
         },
         {
             path: '/home',
-            component: home,
-            children:[
-                {
-                    path: '/',
-                    component: baojia
-                },
-                {
-                    path: '/baojia',
-                    component: baojia
-                },
-                {
-                    path: '/zhipai',
-                    component: zhipai
-                },
-                {
-                    path: '/guanli',
-                    component: guanli
-                },
-                {
-                    path: '/shezhi',
-                    component: shezhi
-                },
-                {
-                    path: '/faxing',
-                    component: faxing
-                },
-                {
-                    path: '/cpgl',
-                    component: cpgl
-                },
-                {
-                    path: '/dbgl',
-                    component: dbgl
-                },
-                {
-                    path: '/xmgl',
-                    component: xmgl
-                },
-                {
-                    path: '/tggl',
-                    component: tggl
-                },
-                {
-                    path: '/xtsz',
-                    component: xtsz
-                },
-                {
-                    path: '/dzb',
-                    component: dzb
-                },
-                {
-                    path: '/jdgl',
-                    component: jdgl
-                },
-                {
-                    path: '/bjgl',
-                    component: bjgl
-                },
-                {
-                    path: '/tjb',
-                    component: tjb
-                },
-                {
-                    path: '/xhjd',
-                    component: xhjd
-                },
-                {
-                    path: '/gys',
-                    component: gys
-                },
-                {
-                    path: '/anpai',
-                    component: anpai
-                },
-                {
-                    path: '/liebiao',
-                    component: liebiao
-                }
-            ]
+            component: home // 独立页面组件
+        },
+        {
+            path: '/baojia',
+            component: baojia // 独立页面组件
+        },
+        {
+            path: '/faxing',
+            component: faxing // 独立页面组件
+        },
+        {
+            path: '/test1',
+            component: faxing // 独立页面组件
+        },
+        {
+            path: '/test2',
+            component: faxing // 独立页面组件
+        },
+        {
+            path: '/test3',
+            component: faxing // 独立页面组件
         },
         {
             path: '/login',
-            component: login
-        },
+            component: faxing
+        }
+        // {
+        //     path: '/',
+        //     redirect: '/login'
+        // },
+        // {
+        //     path: '/home',
+        //     component: home,
+        //     children:[
+        //         {
+        //             path: '/',
+        //             component: baojia
+        //         },
+        //         {
+        //             path: '/baojia',
+        //             component: baojia
+        //         },
+        //         {
+        //             path: '/zhipai',
+        //             component: zhipai
+        //         },
+        //         {
+        //             path: '/guanli',
+        //             component: guanli
+        //         },
+        //         {
+        //             path: '/shezhi',
+        //             component: shezhi
+        //         },
+        //         {
+        //             path: '/faxing',
+        //             component: faxing
+        //         },
+        //         {
+        //             path: '/cpgl',
+        //             component: cpgl
+        //         },
+        //         {
+        //             path: '/dbgl',
+        //             component: dbgl
+        //         },
+        //         {
+        //             path: '/xmgl',
+        //             component: xmgl
+        //         },
+        //         {
+        //             path: '/tggl',
+        //             component: tggl
+        //         },
+        //         {
+        //             path: '/xtsz',
+        //             component: xtsz
+        //         },
+        //         {
+        //             path: '/dzb',
+        //             component: dzb
+        //         },
+        //         {
+        //             path: '/jdgl',
+        //             component: jdgl
+        //         },
+        //         {
+        //             path: '/bjgl',
+        //             component: bjgl
+        //         },
+        //         {
+        //             path: '/tjb',
+        //             component: tjb
+        //         },
+        //         {
+        //             path: '/xhjd',
+        //             component: xhjd
+        //         },
+        //         {
+        //             path: '/gys',
+        //             component: gys
+        //         },
+        //         {
+        //             path: '/anpai',
+        //             component: anpai
+        //         },
+        //         {
+        //             path: '/liebiao',
+        //             component: liebiao
+        //         }
+        //     ]
+        // },
+        // {
+        //     path: '/login',
+        //     component: login
+        // },
     ]
 })
 
 
-                    
-                    
+
