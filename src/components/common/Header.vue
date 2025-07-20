@@ -1,5 +1,5 @@
 <template>
-    <div class="header" >
+    <div class="header"style="border-radius: 8px; padding: 5px" >
        <div class=" status"  >
            <el-row>
                <el-col :span="5">
@@ -25,7 +25,8 @@
                <el-col :span="4">
                    <div class="switch">
                        <a @click="switchzh">中文</a>/
-                       <a @click="switchen">English</a>
+                       <a @click="switchen">English</a>/
+                       <a @click="switchen">한국어</a>
                    </div>
                </el-col>
            </el-row>
@@ -53,12 +54,8 @@
                 // return a
                 return this.$route.path;
             },
-             lang(){
+            lang(){
                 return langpack[this.language]
-            },
-            username(){
-                let username = localStorage.getItem('ms_username');
-                return username ? username : this.name;
             },
             language(){
                 return this.$store.state.language;

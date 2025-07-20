@@ -2,7 +2,7 @@
     <div id="app">
         <div class="wrapper">
             <v-head></v-head>
-            <div class="content">
+            <div >
                 <transition name="move" mode="out-in">
                     <router-view></router-view>
                 </transition>

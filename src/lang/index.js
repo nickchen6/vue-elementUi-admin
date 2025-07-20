@@ -9,6 +9,9 @@ var locales = {
             '/bugaddress': '购买链接',
             '/contact': '联系方式'
         },
+        homepage:{
+            hotProduct:'热门产品'
+        },
         asideNav: {
             '租车管理': {
                 "baojia": "租车订单报价",
@@ -55,6 +58,9 @@ var locales = {
             '/measure': 'Measure & Install',
             '/bugaddress': 'Buy',
             '/contact': 'Contact'
+        },
+        homepage:{
+            hotProduct:'Hot Products'
         },
         asideNav: {
             'Car Rent Manage': {
