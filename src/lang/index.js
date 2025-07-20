@@ -10,28 +10,12 @@ var locales = {
             '/contact': '联系方式'
         },
         homepage:{
-            hotProduct:'热门产品'
+            hotProduct:'热门产品',
+            address: '地址',
+            phone: '电话',
+            email: '邮箱',
+            contact: '联系方式'
         },
-        asideNav: {
-            '租车管理': {
-                "baojia": "租车订单报价",
-                "zhipai": "租车订单指派",
-            },
-            '产品管理': {
-                "faxing": "产品发行",
-                "cpgl": "产品管理",
-                "dbgl": "产品打包管理",
-            },
-            'ceshi':{}
-        },
-        car: [
-            "租车订单报价",
-            "租车订单指派",
-            "租车订单列表",
-            "车辆司机安排",
-            "租车产品管理",
-            "租车系统设置"
-        ],
         product: [
             "产品发行",
             "产品管理",
@@ -45,9 +29,7 @@ var locales = {
             "库存统计表",
             "星海酒店绑定",
             "供应商产品接入"
-        ],
-        tableNav: ['订单编号', '下单时间', '开始使用时间', '结束使用时间', '车型', '用车数量', '行程', '操作'],
-        other: ['车型选择', '确认搜索', '请输入关键字', '当前位置', '租车订单报价']
+        ]
     },
     en: {
         welcome: 'welcome:Beijing lele cool technology development co., LTD(Guangzhou self subsidiary)',
@@ -60,28 +42,12 @@ var locales = {
             '/contact': 'Contact'
         },
         homepage:{
-            hotProduct:'Hot Products'
+            hotProduct:'Hot Products',
+            address: 'Address',
+            phone: 'Phone',
+            email: 'Email',
+            contact: 'Contact Us'
         },
-        asideNav: {
-            'Car Rent Manage': {
-                "baojia": "Car rent price",
-                "zhipai": "Car rent arrange",
-            },
-            'Product Manage': {
-                "faxing": "Product Release",
-                "cpgl": "Product Manage",
-                "dbgl": "Product package manage",
-            },
-            'TEST':{}
-        },
-        car: [
-            "Car rent price",
-            "Car rent arrange",
-            "Car rent list",
-            "driver arrange",
-            "Car rental manage",
-            "Car system settings"
-        ],
         product: [
             "Product Release",
             "Product Manage",
@@ -95,10 +61,7 @@ var locales = {
             "nventory statistics",
             "xinghai hotel",
             "supplier Product"
-        ],
-        tableNav: ['Order No', 'Order time', 'Begin time', 'end time', 'vehicle type', 'Car number', 'route', 'operation'],
-        other: ['Vehicles choice', 'Confirm search', 'input key words', 'current position', 'car renter price']
-
+        ]
     }
 };
 

@@ -71,24 +71,27 @@
                 <h1>{{lang.homepage.hotProduct}} </h1>
             </div>
         </el-row>
-        <el-row style="height: 300px;margin-top: 20px"  type="flex" justify="center">
+        <el-row style="margin-top: 20px"  type="flex" justify="center">
             <el-col :span="4" style="display: flex; justify-content: center;margin-right: 30px ">
-                <el-card style="height: 300px;padding: 10px;border-radius: 30px;width: 400px" >
+                <el-card style="height: 400px;padding: 12px;border-radius: 30px;width: 400px" >
+                    <img src="static/img/picture/product/product1.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
             </el-col>
             <el-col :span="4" style="display: flex; justify-content: center;margin-right: 30px ">
-                <el-card style="height: 300px;padding: 10px;border-radius: 30px;width: 400px" >
+                <el-card style="height: 400px;padding: 12px;border-radius: 30px;width: 400px" >
+                    <img src="static/img/picture/product/product2.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
             </el-col>
             <el-col :span="4" style="display: flex; justify-content: center;margin-right: 30px ">
-                <el-card style="height: 300px;padding: 10px;border-radius: 30px;width: 400px" >
+                <el-card style="height: 400px;padding: 12px;border-radius: 30px;width: 400px" >
+                    <img src="static/img/picture/product/product3.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
             </el-col>
             <el-col :span="4" style="display: flex; justify-content: center;margin-right: 30px ">
-                <el-card style="height: 300px;padding: 10px;border-radius: 30px;width: 400px" >
+                <el-card style="height: 400px;padding: 12px;border-radius: 30px;width: 400px" >
+                    <img src="static/img/picture/product/product5.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
             </el-col>
-
         </el-row>
     </div>
 </template>

@@ -7,14 +7,17 @@
                     <router-view></router-view>
                 </transition>
             </div>
+            <v-footer></v-footer>
         </div>
     </div>
 </template>
 <script>
 import vHead from "./components/common/Header.vue";
+import vFooter from "./components/common/Footer.vue"
 export default {
     components:{
-        vHead
+        vHead,
+        vFooter
     }
 }
 </script>
