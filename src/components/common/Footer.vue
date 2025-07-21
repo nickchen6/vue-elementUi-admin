@@ -8,35 +8,39 @@
         <el-row type="flex" justify="center" style="margin-top: 20px">
             <el-col :span="17">
                 <el-card  style="padding: 10px;border-radius: 30px;" >
-                    <el-form label-width="160px"  style="margin-top: 20px"  model="left">
-                        <el-form-item :label="lang.homepage.address" >
-                            <template #label>
-                                <img src="static/img/picture/location.png"  style="width: 20px; height: 20px; object-fit: cover;">
-                                {{lang.homepage.address}}
-                            </template>
-                            <span style="font-size: 20px;">
+                    <el-row style="padding: 15px">
+                        <el-col :span="2" style="margin-left: 50px;font-size: 20px">
+                            <img src="static/img/picture/location.png"  style="width: 20px; height: 20px; object-fit: cover;">
+                            {{lang.homepage.address}}
+                        </el-col>
+                        <el-col :span="16">
+                            <span style="font-size: 20px;margin-left: -30px">
                                 山东省德州市庆云县渤海路街道迪趣华府17-2号商铺2楼
                             </span>
-                        </el-form-item>
-                        <el-form-item :label="lang.homepage.phone">
-                            <template #label>
-                                <img src="static/img/picture/phone.png"  style="width: 20px; height: 20px; object-fit: cover;">
-                                {{lang.homepage.phone}}
-                            </template>
-                            <span style="font-size: 20px">
+                        </el-col>
+                    </el-row>
+                    <el-row style="padding: 15px">
+                        <el-col :span="2" style="margin-left: 50px;font-size: 20px">
+                            <img src="static/img/picture/phone.png"  style="width: 20px; height: 20px; object-fit: cover;">
+                            {{lang.homepage.phone}}
+                        </el-col>
+                        <el-col :span="16">
+                            <span style="font-size: 20px;margin-left: -30px">
                                 13988888888
+                                </span>
+                        </el-col>
+                    </el-row>
+                    <el-row style="padding: 15px">
+                        <el-col :span="2" style="margin-left: 50px;font-size: 20px">
+                            <img src="static/img/picture/email.png"  style="width: 20px; height: 20px; object-fit: cover;">
+                            {{lang.homepage.email}}
+                        </el-col>
+                        <el-col :span="16">
+                            <span style="font-size: 20px;margin-left: -30px">
+                                antujiancaimaoyi@gmail.com
                             </span>
-                        </el-form-item>
-                        <el-form-item :label="lang.homepage.email">
-                            <template #label>
-                                <img src="static/img/picture/email.png"  style="width: 20px; height: 20px; object-fit: cover;">
-                                {{lang.homepage.email}}
-                            </template>
-                            <span style="font-size: 20px">
-                                youweb@qq.com
-                            </span>
-                        </el-form-item>
-                    </el-form>
+                        </el-col>
+                    </el-row>
                 </el-card>
             </el-col>
 

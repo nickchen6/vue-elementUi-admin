@@ -2,11 +2,11 @@
     <div class="header"style="border-radius: 8px; padding: 5px" >
        <div class=" status"  >
            <el-row>
-               <el-col :span="5">
+               <el-col :span="8">
                    <div class="logoimg"></div>
                    <div class="logo">{{lang.title}}</div>
                </el-col>
-               <el-col :span="15" style="display: flex; justify-content: center; align-items: center">
+               <el-col :span="10" style="display: flex; justify-content: center; align-items: center">
                    <el-menu :default-active="onRoutes"
                             mode="horizontal"
                             style="background: transparent;margin-left: -140px;"
@@ -22,7 +22,7 @@
                        </el-menu-item>
                    </el-menu>
                </el-col>
-               <el-col :span="4">
+               <el-col :span="6">
                    <div class="switch">
                        <a @click="switchzh">中文</a>/
                        <a @click="switchen">English</a>/
