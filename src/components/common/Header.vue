@@ -26,7 +26,7 @@
                    <div class="switch">
                        <a @click="switchzh">中文</a>/
                        <a @click="switchen">English</a>/
-                       <a @click="switchen">한국어</a>
+                       <a @click="switchkr">한국어</a>
                    </div>
                </el-col>
            </el-row>
@@ -67,6 +67,9 @@
             },
             switchen(){
                 this.$store.commit('switchen');
+            },
+            switchkr(){
+                this.$store.commit('switchkr');
             },
             handleCommand(command) {
                 if(command == 'loginout'){

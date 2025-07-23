@@ -38,6 +38,27 @@
                 </el-card>
             </el-col>
         </el-row>
+        <el-row style="margin-top: 20px"  type="flex" justify="center">
+            <div  >
+                <h1>{{lang.product.template}} </h1>
+            </div>
+        </el-row>
+        <el-row style="margin-top: 20px"  type="flex" justify="center">
+            <el-col :span="18" style="display: flex; justify-content: center; ">
+                <el-card style="height: 250px;padding: 15px;border-radius: 30px;width: 400px;margin: 10px" >
+                    <img src="static/img/picture/product/template1.jpg"  style="width: 100%; height: 100%; object-fit: cover;">
+                </el-card>
+                <el-card style="height: 250px;padding: 15px;border-radius: 30px;width: 400px;margin: 10px" >
+                    <img src="static/img/picture/product/template2.jpg"  style="width: 100%; height: 100%; object-fit: cover;">
+                </el-card>
+                <el-card style="height: 250px;padding: 15px;border-radius: 30px;width: 400px;margin: 10px" >
+                    <img src="static/img/picture/product/template3.jpg"  style="width: 100%; height: 100%; object-fit: cover;">
+                </el-card>
+                <el-card style="height: 250px;padding: 15px;border-radius: 30px;width: 400px;margin: 10px" >
+                    <img src="static/img/picture/product/template4.jpg"  style="width: 100%; height: 100%; object-fit: cover;">
+                </el-card>
+            </el-col>
+        </el-row>
     </div>
 </template>
 

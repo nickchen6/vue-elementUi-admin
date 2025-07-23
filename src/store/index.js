@@ -17,6 +17,10 @@ const store = new Vuex.Store({
     switchzh(state){
         state.language = 'zh';
         // Vue.config.lang = state.language;
+    },
+    switchkr(state){
+        state.language = 'kr';
+         // Vue.config.lang = state.language;
     }
   }
 });

@@ -9,41 +9,52 @@
             <el-col :span="17">
                 <el-card  style="padding: 10px;border-radius: 30px;" >
                     <el-row style="padding: 15px">
-                        <el-col :span="2" style="margin-left: 50px;font-size: 20px">
-                            <img src="static/img/picture/location.png"  style="width: 20px; height: 20px; object-fit: cover;">
-                            {{lang.homepage.address}}
-                        </el-col>
-                        <el-col :span="16">
-                            <span style="font-size: 20px;margin-left: -30px">
-                                山东省德州市庆云县渤海路街道迪趣华府17-2号商铺2楼
+                        <el-col  style="margin-left: 50px;font-size: 20px;display: flex">
+                            <div  style="width: 100px">
+                                <img src="static/img/picture/location.png"  style="width: 20px; height: 20px; object-fit: cover;">
+                                {{lang.homepage.address}}
+                            </div>
+                            <div>
+                                <span style="font-size: 20px;margin-left: 10px">
+                                {{lang.footer.address}}
                             </span>
+                            </div>
                         </el-col>
                     </el-row>
                     <el-row style="padding: 15px">
-                        <el-col :span="2" style="margin-left: 50px;font-size: 20px">
-                            <img src="static/img/picture/phone.png"  style="width: 20px; height: 20px; object-fit: cover;">
-                            {{lang.homepage.phone}}
-                        </el-col>
-                        <el-col :span="16">
-                            <span style="font-size: 20px;margin-left: -30px">
-                                13988888888
+                        <el-col  style="margin-left: 50px;font-size: 20px;display: flex">
+                            <div  style="width: 100px">
+                                <img src="static/img/picture/phone.png"  style="width: 20px; height: 20px; object-fit: cover;">
+                                {{lang.homepage.phone}}
+                            </div>
+                            <div>
+                                <span style="font-size: 20px;margin-left: 10px">
+                                    13988888888
                                 </span>
+                            </div>
                         </el-col>
                     </el-row>
                     <el-row style="padding: 15px">
-                        <el-col :span="2" style="margin-left: 50px;font-size: 20px">
-                            <img src="static/img/picture/email.png"  style="width: 20px; height: 20px; object-fit: cover;">
-                            {{lang.homepage.email}}
-                        </el-col>
-                        <el-col :span="16">
-                            <span style="font-size: 20px;margin-left: -30px">
+                        <el-col  style="margin-left: 50px;font-size: 20px;display: flex">
+                            <div style="width: 100px">
+                                <img src="static/img/picture/email.png"  style="width: 20px; height: 20px; object-fit: cover;">
+                                {{lang.homepage.email}}
+                            </div>
+                            <div>
+                                <span style="font-size: 20px;margin-left: 10px">
                                 antujiancaimaoyi@gmail.com
-                            </span>
+                                </span>
+                            </div>
                         </el-col>
                     </el-row>
                 </el-card>
             </el-col>
 
+        </el-row>
+        <el-row   type="flex" justify="center" >
+            <div style="margin-top: 15px" >
+                <span>Copyright © 2025 {{lang.title}} </span>
+            </div>
         </el-row>
     </div>
 </template>

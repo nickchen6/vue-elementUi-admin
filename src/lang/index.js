@@ -1,6 +1,5 @@
 var locales = {
     zh: {
-        welcome: '欢迎您：北京乐乐酷科技发展有限公司（广州自我游旗下子公司）',
         title: '安途建材贸易有限公司',
         nav: {
             '/homepage': '主页',
@@ -21,11 +20,12 @@ var locales = {
             install:'安装'
         },
         product:{
-            introudction: '产品介绍'
-        }
+            introudction: '产品介绍',
+            template: '模板'
+        },
+
     },
     en: {
-        welcome: 'welcome:Beijing lele cool technology development co., LTD(Guangzhou self subsidiary)',
         title: 'Antu Building Materials Trading Company',
         nav: {
             '/homepage': 'Home',
@@ -46,7 +46,40 @@ var locales = {
             install:'Install'
         },
         product:{
-            introudction: 'Production Introduction'
+            introudction: 'Production Introduction',
+            template: 'Template'
+        },
+        footer:{
+            address:'2nd Floor, Shop 17-2, Diqu Huafu, Bohai Road Subdistrict, Qingyun County, Dezhou City, Shandong Province, China-2号商铺2楼'
+        }
+
+    },
+    kr: {
+        title: '안투 건재 무역 유한공사',
+        nav: {
+            '/homepage': '홈페이지',
+            '/product': '제품',
+            '/measure': '측정 및 설치',
+            '/bugaddress': '구매 링크',
+            '/contact': '연락처'
+        },
+        homepage:{
+            hotProduct:'인기 제품',
+            address: '주소',
+            phone: '전화',
+            email: '이메일',
+            contact: '연락처'
+        },
+        measureAndInstall:{
+            measure:'측정',
+            install:'설치'
+        },
+        product:{
+            introudction: '제품 소개',
+            template: '템플릿'
+        },
+        footer:{
+            address:'중국 산둥성 더저우시 칭윈현 보하이로 거리 디취화푸 17-2번지 2층'
         }
     }
 };
