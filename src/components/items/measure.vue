@@ -9,7 +9,7 @@
                         </div>
                     </el-row>
                     <el-row>
-                        <video controls width="1700" style="border-radius: 30px;margin-top: 20px">
+                        <video controls  style="border-radius: 30px;margin-top: 20px;width: 100%">
                             <source src="static/video/measure.mp4" type="video/mp4">
                             您的浏览器不支持 HTML5 视频标签。
                         </video>
@@ -27,7 +27,7 @@
                         </div>
                     </el-row>
                     <el-row>
-                        <video controls width="1700" style="border-radius: 30px;margin-top: 20px">
+                        <video controls  style="border-radius: 30px;margin-top: 20px;width: 100%">
                             <source src="static/video/install.mp4" type="video/mp4">
                             您的浏览器不支持 HTML5 视频标签。
                         </video>
@@ -40,30 +40,30 @@
 </template>
 
 <script>
-    import langpack from "../../lang";
+import langpack from "../../lang";
 
-    export default {
-        computed:{
-            lang(){
-                return langpack[this.language]
-            },
-            language(){
-                return this.$store.state.language;
-            },
+export default {
+    computed:{
+        lang(){
+            return langpack[this.language]
         },
-        components:{},
-        created(){
-            var a = window.location.hash.replace('#/','');
+        language(){
+            return this.$store.state.language;
         },
-        data() {
-            return {
-
-            }
-        },
-        methods: {
+    },
+    components:{},
+    created(){
+        var a = window.location.hash.replace('#/','');
+    },
+    data() {
+        return {
 
         }
+    },
+    methods: {
+
     }
+}
 </script>
 <style scoped>
 

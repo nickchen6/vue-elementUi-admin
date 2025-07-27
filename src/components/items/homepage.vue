@@ -10,15 +10,15 @@
                 </el-carousel-item>
             </el-carousel>
         </el-row>
-        <el-row type="flex" justify="center" style="width: 100%;margin-top: 30px" >
-            <el-col :span="8" style="display: flex; justify-content: flex-end;margin-right: 30px ">
-                <el-card class="box-card" style="background: rgba(255,220,2,0.55);box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);" >
-                    <ul class="infinite-list" style="overflow:auto">
+        <el-row type="flex" justify="center" style="margin-top: 30px" >
+            <el-col :span="10" style="display: flex; justify-content: flex-end;margin-right: 30px ">
+                <el-card  style="background: rgba(255,220,2,0.55);box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);width: 100%" >
+                    <ul  style="overflow:auto">
                         <li class="infinite-list-item advertise">
                             1. Define your parking space style with one click
                         </li>
                         <li class="infinite-list-item advertise" >
-                            2. Make each of your returns home make you want to go home even more.
+                            2. Make each of your returns home make you want to go home.
                         </li>
                         <li class="infinite-list-item advertise">
                             3. Reject pollution, create a pure haven for your car
@@ -27,7 +27,7 @@
                             4. A green new choice: park eco-friendly without compromise
                         </li>
                         <li class="infinite-list-item advertise">
-                            5. Cutting-edge tech, ultra-eco-friendly, effortless breathing for your car
+                            5. Cutting-edge tech, ultra-eco-friendly, effortless breathing
                         </li>
                         <li class="infinite-list-item advertise">
                             6. Unique eco-customization, no two parking spaces alike
@@ -38,9 +38,9 @@
                     </ul>
                 </el-card>
             </el-col>
-            <el-col :span="8">
-                <el-card class="box-card" style="background: rgba(255,220,2,0.55);box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);">
-                    <ul class="infinite-list" style="overflow:auto">
+            <el-col :span="10" style="display: flex;">
+                <el-card style="background: rgba(255,220,2,0.55);box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);width: 100%" >
+                    <ul  style="overflow:auto">
                         <li class="infinite-list-item advertise">
                             1. 너만의 주차 공간 스타일, 한 번의 클릭으로 완성
                         </li>
@@ -72,58 +72,58 @@
             </div>
         </el-row>
         <el-row style="margin-top: 20px"  type="flex" justify="center">
-            <el-col :span="4" style="display: flex; justify-content: center;margin-right: 30px ">
-                <el-card style="height: 400px;padding: 12px;border-radius: 30px;width: 400px" >
+            <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
+                <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
                     <img src="static/img/picture/product/product1.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
             </el-col>
-            <el-col :span="4" style="display: flex; justify-content: center;margin-right: 30px ">
-                <el-card style="height: 400px;padding: 12px;border-radius: 30px;width: 400px" >
+            <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
+                <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
                     <img src="static/img/picture/product/product2.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
             </el-col>
-            <el-col :span="4" style="display: flex; justify-content: center;margin-right: 30px ">
-                <el-card style="height: 400px;padding: 12px;border-radius: 30px;width: 400px" >
+            <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
+                <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
                     <img src="static/img/picture/product/product3.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
             </el-col>
-            <el-col :span="4" style="display: flex; justify-content: center;margin-right: 30px ">
-                <el-card style="height: 400px;padding: 12px;border-radius: 30px;width: 400px" >
+            <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
+                <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
                     <img src="static/img/picture/product/product5.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
             </el-col>
         </el-row>
-<!--        <v-footer></v-footer>-->
+        <!--        <v-footer></v-footer>-->
     </div>
 </template>
 
 <script>
-    import langpack from "../../lang";
-    import vFooter from "../common/Footer.vue"
-    export default {
-        components:{
-            vFooter
+import langpack from "../../lang";
+import vFooter from "../common/Footer.vue"
+export default {
+    components:{
+        vFooter
+    },
+    computed:{
+        lang(){
+            return langpack[this.language]
         },
-        computed:{
-            lang(){
-                return langpack[this.language]
-            },
-            language(){
-                return this.$store.state.language;
-            },
+        language(){
+            return this.$store.state.language;
         },
-        created(){
-            var a = window.location.hash.replace('#/','');
-        },
-        data() {
-            return {
-
-            }
-        },
-        methods: {
+    },
+    created(){
+        var a = window.location.hash.replace('#/','');
+    },
+    data() {
+        return {
 
         }
+    },
+    methods: {
+
     }
+}
 </script>
 <style scoped>
 .el-carousel__item h3 {

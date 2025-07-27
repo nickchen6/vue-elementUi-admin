@@ -23,18 +23,24 @@
             </div>
         </el-row>
         <el-row style="margin-top: 20px"  type="flex" justify="center">
-            <el-col :span="18" style="display: flex; justify-content: center; ">
-                <el-card style="height: 400px;padding: 15px;border-radius: 30px;width: 400px;margin: 10px" >
+            <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
+                <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
                     <img src="static/img/picture/product/product1.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
-                <el-card style="height: 400px;padding: 15px;border-radius: 30px;width: 400px;margin: 10px" >
+            </el-col>
+            <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
+                <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
                     <img src="static/img/picture/product/product2.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
-                <el-card style="height: 400px;padding: 15px;border-radius: 30px;width: 400px;margin: 10px" >
+            </el-col>
+            <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
+                <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
                     <img src="static/img/picture/product/product3.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
-                <el-card style="height: 400px;padding: 15px;border-radius: 30px;width: 400px;margin: 10px" >
-                    <img src="static/img/picture/product/product4.png"  style="width: 100%; height: 100%; object-fit: cover;">
+            </el-col>
+            <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
+                <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
+                    <img src="static/img/picture/product/product5.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
             </el-col>
         </el-row>
@@ -44,17 +50,23 @@
             </div>
         </el-row>
         <el-row style="margin-top: 20px"  type="flex" justify="center">
-            <el-col :span="18" style="display: flex; justify-content: center; ">
-                <el-card style="height: 250px;padding: 15px;border-radius: 30px;width: 400px;margin: 10px" >
+            <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
+                <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
                     <img src="static/img/picture/product/template1.jpg"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
-                <el-card style="height: 250px;padding: 15px;border-radius: 30px;width: 400px;margin: 10px" >
+            </el-col>
+            <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
+                <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
                     <img src="static/img/picture/product/template2.jpg"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
-                <el-card style="height: 250px;padding: 15px;border-radius: 30px;width: 400px;margin: 10px" >
+            </el-col>
+            <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
+                <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
                     <img src="static/img/picture/product/template3.jpg"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
-                <el-card style="height: 250px;padding: 15px;border-radius: 30px;width: 400px;margin: 10px" >
+            </el-col>
+            <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
+                <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
                     <img src="static/img/picture/product/template4.jpg"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
             </el-col>
@@ -63,30 +75,30 @@
 </template>
 
 <script>
-    import langpack from "../../lang";
+import langpack from "../../lang";
 
-    export default {
-        components:{},
-        computed:{
-            lang(){
-                return langpack[this.language]
-            },
-            language(){
-                return this.$store.state.language;
-            },
+export default {
+    components:{},
+    computed:{
+        lang(){
+            return langpack[this.language]
         },
-        created(){
-            var a = window.location.hash.replace('#/','');
-            console.log(a)
+        language(){
+            return this.$store.state.language;
         },
-        data() {
-            return {
+    },
+    created(){
+        var a = window.location.hash.replace('#/','');
+        console.log(a)
+    },
+    data() {
+        return {
 
-            }
-        },
-        methods: {
         }
+    },
+    methods: {
     }
+}
 </script>
 <style scoped>
 .product_card {

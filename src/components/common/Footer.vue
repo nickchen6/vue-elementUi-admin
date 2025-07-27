@@ -1,5 +1,5 @@
 <template>
-    <div style="padding: 15px" >
+    <div style="padding: 15px;margin-top: 20px" >
         <el-row   type="flex" justify="center">
             <div  >
                 <h1>{{lang.homepage.contact}} </h1>
@@ -10,8 +10,10 @@
                 <el-card  style="padding: 10px;border-radius: 30px;" >
                     <el-row style="padding: 15px">
                         <el-col  style="margin-left: 50px;font-size: 20px;display: flex">
-                            <div  style="width: 100px">
+                            <div  >
                                 <img src="static/img/picture/location.png"  style="width: 20px; height: 20px; object-fit: cover;">
+                            </div>
+                            <div style="width: 100px">
                                 {{lang.homepage.address}}
                             </div>
                             <div>
@@ -23,8 +25,10 @@
                     </el-row>
                     <el-row style="padding: 15px">
                         <el-col  style="margin-left: 50px;font-size: 20px;display: flex">
-                            <div  style="width: 100px">
+                            <div  >
                                 <img src="static/img/picture/phone.png"  style="width: 20px; height: 20px; object-fit: cover;">
+                            </div>
+                            <div style="width: 100px">
                                 {{lang.homepage.phone}}
                             </div>
                             <div>
@@ -36,8 +40,11 @@
                     </el-row>
                     <el-row style="padding: 15px">
                         <el-col  style="margin-left: 50px;font-size: 20px;display: flex">
-                            <div style="width: 100px">
+                            <div >
                                 <img src="static/img/picture/email.png"  style="width: 20px; height: 20px; object-fit: cover;">
+
+                            </div>
+                            <div style="width: 100px">
                                 {{lang.homepage.email}}
                             </div>
                             <div>
@@ -59,41 +66,41 @@
     </div>
 </template>
 <script>
-    import langpack from '../../lang/index.js';
-    export default {
-        created(){
+import langpack from '../../lang/index.js';
+export default {
+    created(){
+    },
+    data() {
+        return {
+        }
+    },
+    computed:{
+        onRoutes(){
+            console.log(this.$route.path);
+            return this.$route.path;
         },
-        data() {
-            return {
+        lang(){
+            return langpack[this.language]
+        },
+        language(){
+            return this.$store.state.language;
+        },
+    },
+    methods:{
+        switchzh(){
+            this.$store.commit('switchzh');
+        },
+        switchen(){
+            this.$store.commit('switchen');
+        },
+        handleCommand(command) {
+            if(command == 'loginout'){
+                localStorage.removeItem('ms_username')
+                this.$router.push('/login');
             }
         },
-        computed:{
-            onRoutes(){
-                console.log(this.$route.path);
-                return this.$route.path;
-            },
-            lang(){
-                return langpack[this.language]
-            },
-            language(){
-                return this.$store.state.language;
-            },
-        },
-        methods:{
-            switchzh(){
-                this.$store.commit('switchzh');
-            },
-            switchen(){
-                this.$store.commit('switchen');
-            },
-            handleCommand(command) {
-                if(command == 'loginout'){
-                    localStorage.removeItem('ms_username')
-                    this.$router.push('/login');
-                }
-            },
-        }
     }
+}
 </script>
 <style scoped>
 .el-footer {

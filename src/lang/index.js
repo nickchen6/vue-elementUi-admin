@@ -23,10 +23,13 @@ var locales = {
             introudction: '产品介绍',
             template: '模板'
         },
+        footer:{
+            address:'山东省德州市庆云县渤海路街道迪趣华府17-2号商铺2楼'
+        }
 
     },
     en: {
-        title: 'Antu Building Materials Trading Company',
+        title: 'Antu Building Trading Company',
         nav: {
             '/homepage': 'Home',
             '/product': 'Product',
@@ -50,7 +53,7 @@ var locales = {
             template: 'Template'
         },
         footer:{
-            address:'2nd Floor, Shop 17-2, Diqu Huafu, Bohai Road Subdistrict, Qingyun County, Dezhou City, Shandong Province, China-2号商铺2楼'
+            address:'2f, Shop 17-2, Diqu Huafu, Bohai Road Subdistrict, Qingyun, Dezhou, Shandong Province'
         }
 
     },
