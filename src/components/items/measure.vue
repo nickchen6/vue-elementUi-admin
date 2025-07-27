@@ -35,14 +35,15 @@
                 </el-card>
             </el-col>
         </el-row>
-
+        <v-footer></v-footer>
     </div>
 </template>
 
 <script>
 import langpack from "../../lang";
-
+import vFooter from "../common/Footer.vue"
 export default {
+
     computed:{
         lang(){
             return langpack[this.language]
@@ -51,7 +52,9 @@ export default {
             return this.$store.state.language;
         },
     },
-    components:{},
+    components:{
+        vFooter
+    },
     created(){
         var a = window.location.hash.replace('#/','');
     },

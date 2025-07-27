@@ -7,7 +7,7 @@
                     <router-view></router-view>
                 </transition>
             </div>
-            <v-footer></v-footer>
+<!--            <v-footer></v-footer>-->
         </div>
     </div>
 </template>

@@ -71,14 +71,18 @@
                 </el-card>
             </el-col>
         </el-row>
+        <v-footer></v-footer>
     </div>
 </template>
 
 <script>
 import langpack from "../../lang";
 
+import vFooter from "../common/Footer.vue"
 export default {
-    components:{},
+    components:{
+        vFooter
+    },
     computed:{
         lang(){
             return langpack[this.language]

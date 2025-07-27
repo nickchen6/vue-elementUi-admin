@@ -13,7 +13,7 @@ var locales = {
             address: '地址',
             phone: '电话',
             email: '邮箱',
-            contact: '联系方式'
+            contact: '联系方式',
         },
         measureAndInstall:{
             measure:'测量',

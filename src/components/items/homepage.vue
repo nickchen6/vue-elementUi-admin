@@ -1,12 +1,21 @@
 <template>
     <div style="padding: 5px">
         <el-row>
-            <el-carousel height="900px" style="border-radius: 30px;">
+            <el-carousel height="1100px" style="border-radius: 50px;">
                 <el-carousel-item >
-                    <img src="static/img/picture/首页1.jpg"  style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="static/img/picture/homepage1.jpg"  style="width: 100%; height: 100%;">
                 </el-carousel-item>
                 <el-carousel-item >
-                    <img src="static/img/picture/首页2.jpg"  style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="static/img/picture/homepage2.jpg"  style="width: 100%; height: 100%;">
+                </el-carousel-item>
+                <el-carousel-item >
+                    <img src="static/img/picture/homepage3.jpg"  style="width: 100%; height: 100%;">
+                </el-carousel-item>
+                <el-carousel-item >
+                    <img src="static/img/picture/homepage4.jpg"  style="width: 100%; height: 100%;">
+                </el-carousel-item>
+                <el-carousel-item >
+                    <img src="static/img/picture/homepage5.jpg"  style="width: 100%; height: 100%;">
                 </el-carousel-item>
             </el-carousel>
         </el-row>
@@ -93,7 +102,7 @@
                 </el-card>
             </el-col>
         </el-row>
-        <!--        <v-footer></v-footer>-->
+                <v-footer></v-footer>
     </div>
 </template>
 

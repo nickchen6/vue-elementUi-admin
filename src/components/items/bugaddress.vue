@@ -1,13 +1,15 @@
 <template>
-    <div class="table">
+    <div >
 
+        <v-footer></v-footer>
     </div>
 </template>
 
 <script>
 
+    import vFooter from "../common/Footer.vue";
     export default {
-        components:{},
+        components:{vFooter},
         created(){
             var a = window.location.hash.replace('#/','');
         },
