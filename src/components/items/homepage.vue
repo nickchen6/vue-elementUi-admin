@@ -3,19 +3,19 @@
         <el-row>
             <el-carousel height="1100px" style="border-radius: 50px;">
                 <el-carousel-item >
-                    <img src="static/img/picture/homepage1.jpg"  style="width: 100%; height: 100%;">
+                    <img src="https://anturesource.oss-accelerate.aliyuncs.com/img/picture/homepage1.jpg"  style="width: 100%; height: 100%;">
                 </el-carousel-item>
                 <el-carousel-item >
-                    <img src="static/img/picture/homepage2.jpg"  style="width: 100%; height: 100%;">
+                    <img src="https://anturesource.oss-accelerate.aliyuncs.com/img/picture/homepage2.jpg"  style="width: 100%; height: 100%;">
                 </el-carousel-item>
                 <el-carousel-item >
-                    <img src="static/img/picture/homepage3.jpg"  style="width: 100%; height: 100%;">
+                    <img src="https://anturesource.oss-accelerate.aliyuncs.com/img/picture/homepage3.jpg"  style="width: 100%; height: 100%;">
                 </el-carousel-item>
                 <el-carousel-item >
-                    <img src="static/img/picture/homepage4.jpg"  style="width: 100%; height: 100%;">
+                    <img src="https://anturesource.oss-accelerate.aliyuncs.com/img/picture/homepage4.jpg"  style="width: 100%; height: 100%;">
                 </el-carousel-item>
                 <el-carousel-item >
-                    <img src="static/img/picture/homepage5.jpg"  style="width: 100%; height: 100%;">
+                    <img src="https://anturesource.oss-accelerate.aliyuncs.com/img/picture/homepage5.jpg"  style="width: 100%; height: 100%;">
                 </el-carousel-item>
             </el-carousel>
         </el-row>
@@ -83,22 +83,22 @@
         <el-row style="margin-top: 20px"  type="flex" justify="center">
             <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
                 <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
-                    <img src="static/img/picture/product/product1.png"  style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="https://anturesource.oss-accelerate.aliyuncs.com/img/picture/product/product1.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
             </el-col>
             <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
                 <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
-                    <img src="static/img/picture/product/product2.png"  style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="https://anturesource.oss-accelerate.aliyuncs.com/img/picture/product/product2.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
             </el-col>
             <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
                 <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
-                    <img src="static/img/picture/product/product3.png"  style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="https://anturesource.oss-accelerate.aliyuncs.com/img/picture/product/product3.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
             </el-col>
             <el-col :span="5" style="display: flex; justify-content: center;margin-right: 30px ">
                 <el-card style="height: 95%;padding: 12px;border-radius: 30px" >
-                    <img src="static/img/picture/product/product5.png"  style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="https://anturesource.oss-accelerate.aliyuncs.com/img/picture/product/product5.png"  style="width: 100%; height: 100%; object-fit: cover;">
                 </el-card>
             </el-col>
         </el-row>

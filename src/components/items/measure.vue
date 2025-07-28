@@ -10,7 +10,7 @@
                     </el-row>
                     <el-row>
                         <video controls  style="border-radius: 30px;margin-top: 20px;width: 100%">
-                            <source src="static/video/measure.mp4" type="video/mp4">
+                            <source src="https://anturesource.oss-accelerate.aliyuncs.com/video/measure.mp4" type="video/mp4">
                             您的浏览器不支持 HTML5 视频标签。
                         </video>
                     </el-row>
@@ -28,7 +28,7 @@
                     </el-row>
                     <el-row>
                         <video controls  style="border-radius: 30px;margin-top: 20px;width: 100%">
-                            <source src="static/video/install.mp4" type="video/mp4">
+                            <source src="https://anturesource.oss-accelerate.aliyuncs.com/video/install.mp4" type="video/mp4">
                             您的浏览器不支持 HTML5 视频标签。
                         </video>
                     </el-row>
