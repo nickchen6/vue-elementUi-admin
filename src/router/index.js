@@ -5,7 +5,7 @@ import home from '../components/common/Home.vue';
 import homepage from '../components/items/homepage.vue';
 import product from '../components/items/product.vue';
 import measure from '../components/items/measure.vue';
-import bugaddress from '../components/items/bugaddress.vue';
+import Buy from '../components/items/buy.vue';
 import contact from '../components/items/contact.vue';
 
 Vue.use(Router);
@@ -29,7 +29,7 @@ export default new Router({
         },
         {
             path: '/bugaddress',
-            component: bugaddress // 独立页面组件
+            component: Buy // 独立页面组件
         },
         {
             path: '/contact',

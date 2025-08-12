@@ -114,7 +114,7 @@
         float: left;
         width: 70px;
         height: 70px;
-        background-image: url(https://anturesource.oss-accelerate.aliyuncs.com/img/antuLogo1.jpg?Expires=1753710656&OSSAccessKeyId=TMP.3Ks4SCLs61vJQt6dGMLMvHDNaZCW8YAa8xvxJRiXYYuZjstkH7cUx9CqHP46MtsKP6hAdngsGKnhAbBG1yS4HdGJD7ppwJ&Signature=p9ChFvmnUwaeTZC5RFDFhM09H9Y%3D);
+        background-image: url(https://anturesource.oss-accelerate.aliyuncs.com/img/antuLogo1.jpg);
         background-size: cover;
         border-radius: 34px;
     }

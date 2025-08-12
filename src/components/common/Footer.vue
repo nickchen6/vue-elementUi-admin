@@ -23,21 +23,21 @@
                             </div>
                         </el-col>
                     </el-row>
-                    <el-row style="padding: 15px">
-                        <el-col  style="margin-left: 50px;font-size: 20px;display: flex">
-                            <div  >
-                                <img src="static/img/picture/phone.png"  style="width: 20px; height: 20px; object-fit: cover;">
-                            </div>
-                            <div style="width: 100px">
-                                {{lang.homepage.phone}}
-                            </div>
-                            <div>
-                                <span style="font-size: 20px;margin-left: 10px">
-                                    13988888888
-                                </span>
-                            </div>
-                        </el-col>
-                    </el-row>
+<!--                    <el-row style="padding: 15px">-->
+<!--                        <el-col  style="margin-left: 50px;font-size: 20px;display: flex">-->
+<!--                            <div  >-->
+<!--                                <img src="static/img/picture/phone.png"  style="width: 20px; height: 20px; object-fit: cover;">-->
+<!--                            </div>-->
+<!--                            <div style="width: 100px">-->
+<!--                                {{lang.homepage.phone}}-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <span style="font-size: 20px;margin-left: 10px">-->
+<!--                                    13988888888-->
+<!--                                </span>-->
+<!--                            </div>-->
+<!--                        </el-col>-->
+<!--                    </el-row>-->
                     <el-row style="padding: 15px">
                         <el-col  style="margin-left: 50px;font-size: 20px;display: flex">
                             <div >

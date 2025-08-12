@@ -1,7 +1,12 @@
 <template>
     <div style="padding: 5px">
+        <el-row style=""  type="flex" justify="center">
+            <div  >
+                <img src="static/img/picture/title.png"  style="width: 100%; height: 100%;">
+            </div>
+        </el-row>
         <el-row>
-            <el-carousel height="1100px" style="border-radius: 50px;">
+            <el-carousel height="900px" style="border-radius: 50px;">
                 <el-carousel-item >
                     <img src="https://anturesource.oss-accelerate.aliyuncs.com/img/picture/homepage1.jpg"  style="width: 100%; height: 100%;">
                 </el-carousel-item>
