@@ -2,7 +2,7 @@
     <div style="padding: 5px">
         <el-row style=""  type="flex" justify="center">
             <div  >
-                <img src="static/img/picture/title.png"  style="width: 100%; height: 100%;">
+                <img src="https://anturesource.oss-accelerate.aliyuncs.com/img/picture/homepagetitle.png"  style="width: 100%; height: 100%;">
             </div>
         </el-row>
         <el-row>
