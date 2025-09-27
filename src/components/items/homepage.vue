@@ -253,11 +253,11 @@ export default {
             advertisementLists: [
                 [
                     "1. Define your parking space style with one click",
-                    "2. Make each of your returns home make you want to go home.",
+                    "2. Make each of your returns home make you want.",
                     "3. Reject pollution, create a pure haven for your car",
-                    "4. A green new choice: park eco-friendly without compromise",
-                    "5. Cutting-edge tech, ultra-eco-friendly, effortless breathing",
-                    "6. Unique eco-customization, no two parking spaces alike",
+                    "4. A green new choice: park eco-friendly",
+                    "5. Cutting-edge tech, effortless breathing",
+                    "6. Unique eco-customization",
                     "7. Customized without repetition, eco-friendly spaces with endless charm"
                 ],
                 [
