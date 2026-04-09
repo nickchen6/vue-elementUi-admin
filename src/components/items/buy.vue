@@ -122,7 +122,7 @@
                     <!-- 价格信息 -->
                     <div class="info-section">
                         <div class="info-label">{{ lang.buy.price }}:</div>
-                        <div class="info-value price">320,000 ₩/m²</div>
+                        <div class="info-value price">$110/m²</div>
                     </div>
                 </div>
 
@@ -146,7 +146,7 @@
 
                     <div class="total-price">
                         <span class="total-label">{{ lang.buy.totalCost }}:</span>
-                        <span class="total-value">{{ formattedTotalPrice }}₩</span>
+                        <span class="total-value">${{ formattedTotalPrice }}</span>
                     </div>
 
                     <el-button
@@ -234,8 +234,8 @@ export default {
 
         // 计算总价
         formattedTotalPrice() {
-            const total = this.size * 320000;
-            return total.toLocaleString('ko-KR'); // 韩国数字格式
+            const total = this.size * 110;
+            return total.toLocaleString('en-US'); // 美国数字格式
         },
 
         // 响应式轮播图高度
@@ -267,13 +267,18 @@ export default {
         },
 
         handleBuy() {
-            this.$alert(this.lang.buy.contact, this.lang.buy.purchaseInfo, {
-                confirmButtonText: 'OK',
-                callback: action => {
-                    // 这里可以添加购买逻辑
-                    console.log('购买面积:', this.size, 'm²');
-                    console.log('总价:', this.formattedTotalPrice, '₩');
+            this.$confirm(
+                this.lang.buy.contact,
+                this.lang.buy.purchaseInfo,
+                {
+                    confirmButtonText: 'Go to Contact',
+                    cancelButtonText: 'Cancel',
+                    customClass: 'buy-contact-dialog'
                 }
+            ).then(() => {
+                window.location.hash = '#/contact';
+            }).catch(() => {
+                // 取消操作
             });
         },
 

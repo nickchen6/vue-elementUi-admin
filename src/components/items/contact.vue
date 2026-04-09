@@ -116,52 +116,6 @@
                         </div>
                     </div>
 
-                    <!-- TikTok -->
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <img
-                                src="static/img/picture/tiktok.png"
-                                alt="TikTok"
-                                class="icon-img"
-                            >
-                        </div>
-                        <div class="contact-info">
-                            <div class="contact-platform">TikTok</div>
-                            <div class="contact-detail">
-                                <a
-                                    href="https://www.tiktok.com/@cheweidiban?lang=zh-Hans"
-                                    target="_blank"
-                                    class="contact-link"
-                                >
-                                    https://www.tiktok.com/@cheweidiban
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Instagram -->
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <img
-                                src="static/img/picture/ins.jpg"
-                                alt="Instagram"
-                                class="icon-img"
-                            >
-                        </div>
-                        <div class="contact-info">
-                            <div class="contact-platform">Instagram</div>
-                            <div class="contact-detail">
-                                <a
-                                    href="https://www.instagram.com/antuguomao/"
-                                    target="_blank"
-                                    class="contact-link"
-                                >
-                                    https://www.instagram.com/antuguomao/
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Facebook -->
                     <div class="contact-item">
                         <div class="contact-icon">
@@ -180,6 +134,29 @@
                                     class="contact-link"
                                 >
                                     https://www.facebook.com/antuguomao
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FaceBook 2 -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img
+                                src="static/img/picture/facebook.jpg"
+                                alt="Facebook"
+                                class="icon-img"
+                            >
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-platform">FaceBook</div>
+                            <div class="contact-detail">
+                                <a
+                                    href="https://www.facebook.com/profile.php?id=61583511745393"
+                                    target="_blank"
+                                    class="contact-link"
+                                >
+                                    https://www.facebook.com/profile.php?id=61583511745393
                                 </a>
                             </div>
                         </div>
@@ -255,15 +232,15 @@ export default {
     --page-padding: 20px;
     --card-border-radius: 30px;
     --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    --primary-color: #ff9d02;
+    --primary-color: #ffd329;
     --text-color: #333;
-    --link-color: #409eff;
+    --link-color: #ffd329;
 }
 
 .contact-page {
     padding: var(--page-padding);
     min-height: 100vh;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,10 +263,6 @@ export default {
     color: var(--text-color);
     margin: 0;
     font-weight: 600;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 /* 联系卡片 */
@@ -371,9 +344,10 @@ export default {
 }
 
 .contact-link:hover {
-    color: #ff9d02;
-    text-decoration: underline;
-}
+        color: #ffd329;
+        text-decoration: underline;
+        opacity: 0.8;
+    }
 
 /* 版权信息 */
 .copyright {
@@ -566,42 +540,41 @@ export default {
 /* 深色模式支持 */
 @media (prefers-color-scheme: dark) {
     .contact-page {
-        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        background: #f5f5f5;
     }
 
     .contact-card {
-        background: rgba(44, 62, 80, 0.95) !important;
-        color: white;
+        background: #ffffff !important;
+        color: #333;
     }
 
     .contact-title h1 {
-        background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #333;
     }
 
     .contact-platform {
-        color: #ecf0f1;
+        color: #333;
     }
 
     .contact-link {
-        color: #3498db;
+        color: #ffd329;
     }
 
     .contact-link:hover {
-        color: #2ecc71;
+        color: #ffd329;
+        opacity: 0.8;
     }
 
     .contact-item {
-        border-bottom: 1px solid #34495e;
+        border-bottom: 1px solid #e0e0e0;
     }
 
     .contact-item:hover {
-        background: rgba(52, 152, 219, 0.1);
+        background: rgba(255, 157, 2, 0.05);
     }
 
     .copyright {
-        color: #bdc3c7;
+        color: #666;
     }
 }
 

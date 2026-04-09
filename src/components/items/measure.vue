@@ -188,7 +188,7 @@ export default {
     padding: 20px;
     max-width: 100%;
     overflow-x: hidden;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: #fff;
     min-height: 100vh;
 }
 
@@ -229,10 +229,6 @@ export default {
     color: #333;
     margin: 0;
     font-weight: 600;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 /* 视频内容 */
@@ -251,7 +247,7 @@ export default {
 }
 
 .video-player:focus {
-    outline: 2px solid #409eff;
+    outline: 2px solid #ffd329;
     outline-offset: 2px;
 }
 
@@ -295,7 +291,7 @@ export default {
 @media (max-width: 768px) {
     .measure-install-page {
         padding: 10px;
-        background: linear-gradient(135deg, #f5f7fa 0%, #dde4f0 100%);
+        background: #fff;
     }
 
     .video-section {
@@ -383,7 +379,7 @@ export default {
 }
 
 .video-player::-webkit-media-controls-play-button {
-    background-color: #409eff;
+    background-color: #ffd329;
     border-radius: 50%;
 }
 
@@ -424,22 +420,20 @@ export default {
 /* 深色模式支持 */
 @media (prefers-color-scheme: dark) {
     .measure-install-page {
-        background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+        background: #f5f5f5;
     }
 
     .video-card {
-        background: rgba(44, 62, 80, 0.95) !important;
-        color: white;
+        background: #ffffff !important;
+        color: #333;
     }
 
     .video-header h1 {
-        background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #333;
     }
 
     .video-description p {
-        color: #bdc3c7;
+        color: #666;
     }
 }
 </style>
